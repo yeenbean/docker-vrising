@@ -1,4 +1,11 @@
-# v-rising-wine-docker-image
+# docker-vrising
+
+> 💡 This is a fork of [Mephi00/v-rising-wine-docker-image](https://github.com/Mephi00/v-rising-wine-docker-image). For now, I'm leaving the original readme below intact. However, here are some notable changes that I'll be making:
+> - [ ] docker-compose.yml builds image instead of pulling image, which allows for server admins to update the server immediately when new patches are released. Alternatively, build and push to a private container registry and have your servers pull the new image.
+> - [ ] Additional scripts to automate server resets via crontab. This allows for more granular control of the server wipe schedule compared to the built-in method.
+> - [ ] Ansible deployment, and possibly Terraform because I want to learn it.
+
+---
 
 This docker image is supposed to run a v rising server.
 At the time of writing the server is only available as a windows executable.
