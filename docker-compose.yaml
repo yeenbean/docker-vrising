@@ -3,7 +3,8 @@ version: '3.7'
 services:
   vrising:
     container_name: v-rising
-    image: mephi00/v-rising-wine
+    #image: mephi00/v-rising-wine
+    build: .
     volumes:
       - type: bind
         source: ./saves

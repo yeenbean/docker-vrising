@@ -1,8 +1,8 @@
 # docker-vrising
 
 > 💡 This is a fork of [Mephi00/v-rising-wine-docker-image](https://github.com/Mephi00/v-rising-wine-docker-image). For now, I'm leaving the original readme below intact. However, here are some notable changes that I'll be making:
-> - [ ] docker-compose.yml builds image instead of pulling image, which allows for server admins to update the server immediately when new patches are released. Alternatively, build and push to a private container registry and have your servers pull the new image.
-> - [ ] Additional scripts to automate server resets via crontab. This allows for more granular control of the server wipe schedule compared to the built-in method.
+> - [x] docker-compose.yml builds image instead of pulling image. This is optional as the container will automatically update the game server with each redeploy, and I've left the original reference to the image if you prefer.
+> - [ ] Additional scripts to automate server resets via crontab. This allows for more granular control of the server wipe schedule compared to the built-in method. **Please see information below to effectively use this feature.**
 > - [ ] Ansible deployment, and possibly Terraform because I want to learn it.
 
 ---
