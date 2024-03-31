@@ -63,7 +63,7 @@ reset_world () {
         rm -rf saves/Saves/
         docker compose rm
         docker compose up -d
-    elif
+    fi
 }
 
 # info dialog
