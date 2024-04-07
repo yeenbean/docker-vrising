@@ -89,6 +89,7 @@ echo
 echo
 echo "All done."
 echo
-echo "[WARN] You will need to log out and back in before Docker will work."
-echo "Use \"vrising-lifecycle-controller.sh init\" to configure your server."
-echo "Then, you can start the server with \"vrising-lifecycle-controller.sh start\""
+echo "Please do the following before starting your server:"
+echo "  1. Log out and back in for group membership changes to take effect."
+echo "     This is required for Docker to work."
+echo "  2. Modify the .env file."
