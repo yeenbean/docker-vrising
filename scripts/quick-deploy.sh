@@ -83,6 +83,7 @@ cd ~/
 git clone https://github.com/yeenbean/docker-vrising.git
 cd ~/docker-vrising
 mkdir saves
+cp .env.example .env
 
 echo
 echo

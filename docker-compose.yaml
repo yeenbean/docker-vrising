@@ -9,6 +9,9 @@ services:
       - type: bind
         source: ./saves
         target: /saves
+    env_file:
+      - path: ./.env
+        required: true
     ports:
       - 9876:9876/udp
       - 9877:9877/udp
