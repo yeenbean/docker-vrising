@@ -48,24 +48,6 @@ rebuild_container () {
     docker compose up -d
 }
 
-reset_world () {
-    if [ "$1" == "interactively" ]; then
-        yesno "Resetting the world will erase your server's saves. You may want to back up your saves before continuing. Are you sure you want to do this?"
-        response=$?
-
-        case $response in
-            0)
-                reset_world
-                ;;
-        esac
-    else
-        docker compose down
-        rm -rf saves/Saves/
-        docker compose rm
-        docker compose up -d
-    fi
-}
-
 # info dialog
 info() {
     dialog --aspect $aspect --backtitle "$backtitle" --title $title --msgbox "$1" 0 0
@@ -78,6 +60,20 @@ yesno() {
     response=$?
     clear
     return $response
+}
+
+reset_world () {
+    yesno "Resetting the world will erase your server's saves. You may want to back up your saves before continuing. Are you sure you want to do this?"
+    response=$?
+
+    case $response in
+        0)
+            docker compose down
+            rm -rf saves/Saves/
+            docker compose rm
+            docker compose up -d
+            ;;
+    esac
 }
 
 function vrisinginteractive() {
@@ -101,7 +97,7 @@ function vrisinginteractive() {
                 rebuild_container
                 ;;
             3)
-                reset_world interactively
+                reset_world
                 ;;
             4)
                 stop_server
