@@ -42,7 +42,7 @@ The server can be configured using environment variables or by providing configu
 | V_RISING_DESC           |  string  | Description of the server                     | Empty string     |
 | V_RISING_MAX_USER       |   int    | Num of max concurrent players                 | 40               |
 | V_RISING_MAX_ADMIN      |   int    | Num of max concurrent player using admin menu | 4                |
-| V_RISING_SETTING_PRESET |  string  | Setting preset provided by Stunlock Studios   | Empty String     |
+| V_RISING_SETTING_PRESET |  string  | [Setting preset](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/790/How-to-change-the-GameSettingsPreset-on-a-V-Rising-server.html) provided by Stunlock Studios   | Empty String     |
 
 ### Variables to configure settings in ServerGameSettings.json
 
