@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# bash <(curl -s https://raw.githubusercontent.com/yeenbean/docker-vrising/main/scripts/quick-deploy.sh)
 
 echo " ██▒   █▓    ██▀███   ██▓  ██████  ██▓ ███▄    █   ▄████ ";
 echo "▓██░   █▒   ▓██ ▒ ██▒▓██▒▒██    ▒ ▓██▒ ██ ▀█   █  ██▒ ▀█▒";
