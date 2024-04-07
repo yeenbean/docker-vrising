@@ -11,7 +11,7 @@
   "Secure": true,
   "ListOnMasterServer": true,
   "AutoSaveCount": 50,
-  "AutoSaveInterval": 600,
+  "AutoSaveInterval": 120,
   "GameSettingsPreset": "",
   "AdminOnlyDebugEvents": true,
   "DisableDebugEvents": false
